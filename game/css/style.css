@@ -1,0 +1,39 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #14101f;
+}
+
+.stage {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(1200px 700px at 50% 30%, #2b2140 0%, #14101f 70%);
+}
+
+#game {
+  display: block;
+  width: min(100vw, 177.78vh);
+  height: min(100vh, 56.25vw);
+  touch-action: none;
+  cursor: crosshair;
+  border-radius: 6px;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.55);
+}
+
+#status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.help {
+  color: #f3e9d2;
+  font: 16px/1.5 Georgia, serif;
+  text-align: center;
+}
